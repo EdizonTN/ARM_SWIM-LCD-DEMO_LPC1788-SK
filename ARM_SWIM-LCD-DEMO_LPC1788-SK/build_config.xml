@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="Assembly Source File">
+
+</language>
+<language name="C Source File">
+<includepath workspace_path="true">/${ProjName}/Include</includepath>
+<includepath workspace_path="true">/${ProjName}/Chip/Include</includepath>
+<includepath workspace_path="true">/${ProjName}/Chip/Core/Include</includepath>
+<includepath workspace_path="true">/${ProjName}/Chip/Drivers/Include</includepath>
+<includepath workspace_path="true">/${ProjName}/LIB/GUI-SWIM/Include</includepath>
+
+</language>
+<language name="Object File">
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="Assembly Source File">
+
+</language>
+<language name="C Source File">
+
+</language>
+<language name="Object File">
+
+</language>
+</section>
+</cdtprojectproperties>

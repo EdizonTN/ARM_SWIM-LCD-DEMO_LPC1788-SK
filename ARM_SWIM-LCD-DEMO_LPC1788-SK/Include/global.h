@@ -1,9 +1,10 @@
-/***********************************************************
- * global.h
- *
- *  Created on: 25.7.2014
- *      Author: peterj
- ***********************************************************/
+// ******************************************************************************************************
+// global.h
+//
+//  Created on: 20.8.2014
+//      Author: "EdizonTN@gmail.com"
+//
+// ******************************************************************************************************
 
 // ******************************************************************************************************
 // USER - some useful macros....
@@ -67,6 +68,7 @@
 // ******************************************************************************************************
 //#include "bsp.h"
 //#pragma GCC system_header
+
 // SWIM Graphics User Interface Library
 //#include "LPC177x_8x.h"
 //#include "type.h"
@@ -75,13 +77,12 @@
 //#include "lcd_driver.h"
 //#include "lcd_type.h"
 
-// ******************************************************************************************************
-// SWIM LIBRARY
-
 #include "../LIB/GUI-SWIM/Include/lpc_swim_font.h"
 #include "../LIB/GUI-SWIM/Include/lpc_swim.h"
+#include "../LIB/GUI-SWIM/Include/lpc_rom8x8.h"
 #include "../LIB/GUI-SWIM/Include/lpc_rom8x16.h"
 #include "../LIB/GUI-SWIM/Include/lpc_winfreesystem14x16.h"
+#include "../LIB/GUI-SWIM/Include/lpc_x5x7.h"
 #include "../LIB/GUI-SWIM/Include/lpc_x6x13.h"
 
 #endif /* GLOBAL_H_ */

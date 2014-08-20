@@ -1135,10 +1135,10 @@ typedef struct
 /** @brief  Ethernet Media Access Controller (EMAC) register structure definition */
 typedef struct
 {
-  __IO uint32_t MAC1;                   	// MAC configuration register 1. R/W 0x8000 0x2008 4000
-  __IO uint32_t MAC2;						// MAC configuration register 2. R/W 0 0x2008 4004
-  __IO uint32_t IPGT;						// Back-to-Back Inter-Packet-Gap register. R/W 0 0x2008 4008
-  __IO uint32_t IPGR;						// Non Back-to-Back Inter-Packet-Gap register. R/W 0 0x2008 400C
+  __IO uint32_t MAC1;                   /* MAC Registers                      */
+  __IO uint32_t MAC2;
+  __IO uint32_t IPGT;
+  __IO uint32_t IPGR;
   __IO uint32_t CLRT;
   __IO uint32_t MAXF;
   __IO uint32_t SUPP;

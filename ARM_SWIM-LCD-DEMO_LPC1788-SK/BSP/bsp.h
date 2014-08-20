@@ -1,15 +1,14 @@
-/***********************************************************
- * bsp.h
- *
- *  Created on: 29.7.2014
- *      Author: peterj
- ***********************************************************/
-
+// ******************************************************************************************************
+// bsp.h
+//
+//  Created on: 20.8.2014
+//      Author: "EdizonTN@gmail.com"
+//	Board support Package for IAR LPC1788-SK
+// ******************************************************************************************************
 
 #ifndef BSP_H_
 #define BSP_H_
 
-<<<<<<< master
 #include "global.h"
 
 
@@ -77,8 +76,5 @@
 
 #include "../DRV/TouchScreen/Include/TS_Analog.h"				// include a driver
 
-=======
-	#include "phylan_ks8721b.h"  				// driver pre externy ethernet PHY
->>>>>>> e0d69d0 LCD is Working!
 
 #endif /* BSP_H_ */

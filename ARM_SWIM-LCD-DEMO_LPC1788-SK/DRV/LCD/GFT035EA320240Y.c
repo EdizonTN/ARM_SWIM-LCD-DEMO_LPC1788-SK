@@ -1,15 +1,21 @@
-/*
- * GFT035EA320240Y.c
- *
- *  Created on: 11.8.2014
- *      Author: peterj
- */
+//
+// GFT035EA320240Y.c
+//
+//  Created on: 20.8.2014
+//      Author: "EdizonTN@gmail.com"
+//
+// ******************************************************************************************************
 
 #include "global.h"
 #include "../Chip/Drivers/Include/lpc177x_8x_lcd.h"
 #include "../Chip/Drivers/Include/lpc177x_8x_pwm.h"
 #include "../Chip/Drivers/Include/lpc177x_8x_gpio.h"
 #include "../Chip/Drivers/Include/lpc177x_8x_clkpwr.h"
+
+// ******************************************************************************************************
+// Globals
+// ******************************************************************************************************
+extern LCD_Config_Type 	lcd_config;						// LCD active struct
 
 
 // ******************************************************************************************************
@@ -50,8 +56,6 @@ void Disable_LCD_Cursor(void)
 
 void Init_LCD(void)
 {
-	  LCD_Config_Type lcd_config;
-
 	  LCD_Enable (FALSE);
 
 	  lcd_config.big_endian_byte = 0;
@@ -71,10 +75,12 @@ void Init_LCD(void)
 	  lcd_config.polarity.invert_vsync = 1;
 	  lcd_config.polarity.invert_panel_clock = 1;
 
-	  lcd_config.lcd_panel_upper =  LCD_VRAM_BASE_ADDR_UPPER;
-	  lcd_config.lcd_panel_lower =  LCD_VRAM_BASE_ADDR_LOWER;
+//	  lcd_config.lcd_panel_upper =  LCD_VRAM_BASE_ADDR_START;//				//povodny stav.
+//	  lcd_config.lcd_panel_lower =  LCD_VRAM_BASE_ADDR_TOP;
+	  lcd_config.lcd_panel_upper =  LCD_VRAM_BASE_ADDR_TOP;					//ToDo: toto bolo naopak.
+	  lcd_config.lcd_panel_lower =  LCD_VRAM_BASE_ADDR_START;
 
-	  lcd_config.lcd_bpp = LCD_BPP_24;
+	  lcd_config.lcd_bpp = LCD_BPP_16; //LCD_BPP_24;
 	  lcd_config.lcd_type = LCD_TFT;
 	  lcd_config.lcd_palette = _NULL;
 	  lcd_config.lcd_bgr = FALSE;

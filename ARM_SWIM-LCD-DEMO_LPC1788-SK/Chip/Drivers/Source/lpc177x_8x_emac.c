@@ -643,7 +643,7 @@ void EMAC_UpdateRxConsumeIndex(void)
  **********************************************************************/
 void ENET_IRQHandler(void)
 {
-	/* EMAC Ethernet Controller Interrupt function. */
+    /* EMAC Ethernet Controller Interrupt function. */
     uint32_t int_stat;
     int32_t RxLen;
     

@@ -30,9 +30,9 @@
 #define LCD_CURSOR_OFF_X       			(LCD_CURSOR_H_SIZE/2)
 #define LCD_CURSOR_OFF_Y       			(LCD_CURSOR_V_SIZE/2)
 
-// Cursor
-#define LCD_VRAM_BASE_ADDR_UPPER 		((uint32_t)SDRAM_BASE_ADDR + 0x00100000)
-#define LCD_VRAM_BASE_ADDR_LOWER 		(LCD_VRAM_BASE_ADDR_UPPER + 1024*768*4)
+// Memory
+#define LCD_VRAM_BASE_ADDR_START 		((uint32_t)SDRAM_BASE_ADDR + 0x00100000)
+#define LCD_VRAM_BASE_ADDR_TOP 			(LCD_VRAM_BASE_ADDR_START + LCD_H_SIZE*LCD_V_SIZE*4)
 #define LCD_CURSOR_BASE_ADDR 	    	((uint32_t)0x20088800)
 
 //  Backlight defines:
@@ -64,4 +64,5 @@ extern void Enable_LCD_Cursor(void);
 extern void Disable_LCD_Cursor(void);
 extern const unsigned char Cursor[(LCD_CURSOR_H_SIZE/4)*LCD_CURSOR_H_SIZE];
 extern void Set_LCD_Cursor(int x, int y);
+//extern LCD_Config_Type 	lcd_config;						// LCD active struct
 #endif /* _GFT035EA320240Y_H */
